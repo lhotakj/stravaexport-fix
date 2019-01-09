@@ -11,8 +11,9 @@ Simple Python script to convert strava `TCX` files to `GPX` (using `gpsbabel`)
  
 ## Requirements
 - GPSbabel:
-  -- RHEL/Centos `sudo yum install gpsbabel`
-  -- Ubuntu `sudo apt-get install gpsbabel`
+  - RHEL/Centos `sudo yum install gpsbabel`
+  - Ubuntu `sudo apt-get install gpsbabel`
+  - Windows: download [here|https://www.gpsbabel.org/download.html] and mare sure the script can reach path
 - Python 3.6+
 
 
