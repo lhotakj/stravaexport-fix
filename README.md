@@ -2,7 +2,7 @@
 Simple Python script to convert strava `TCX` files to `GPX` (using `gpsbabel`)
 
 ## How to get all Strava tracks?
-- Login to Strava
+- Login to [strava.com](https://www.strava.com/)
 - Go to your profile, click [My Account](https://www.strava.com/account), click [Download or Delete Your Data](https://www.strava.com/athlete/delete_your_account) then `Get Started` button. Don't worry nothing gets deleted.
 - Under point 2 click button `Request Your Archive`.
 - You should receive within an email within a few hours with a link to your ZIP archive
