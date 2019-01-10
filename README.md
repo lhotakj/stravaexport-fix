@@ -54,7 +54,7 @@ Saving new activities ...
 
 ## Future development
 - Adding name and activity type to converted `.tcx` files - coming soon
-- Better error handling
+- Improved error handling
 - Export the activities to XLS(X) files
 - Parametrized execution
 
