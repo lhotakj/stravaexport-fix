@@ -1,12 +1,13 @@
 # STRAVA export fix
-Simple Python script to unzip and convert strava `TCX` files to the unified `GPX` format (using `gpsbabel`)
+Simple Python script to unzip any GZ archives and convert `tcx` activities to the unified `gpx` format. After the conversion the tool updates your `activities.csv` filenames accordingly, the tool can be safely executed on the already converted activities.
 
 ## Requirements
 - *GPSbabel*:
   - RHEL/Centos `sudo yum install gpsbabel`
   - Ubuntu `sudo apt-get install gpsbabel`
   - Windows: [download](https://www.gpsbabel.org/download.html) and mare sure the script can reach path or copy the `gpsbabel.exe' to the repo root
-- *Python 3.4+* (tested on Windows / Linux)
+- *Python 3.4+* (tested on Windows and Linux)
+- Strava zip files containing folder `activites.csv` and folder `activities` with individual files.
 
 ## How to get all Strava tracks?
 - Login to [strava.com](https://www.strava.com/)
@@ -17,9 +18,35 @@ Simple Python script to unzip and convert strava `TCX` files to the unified `GPX
 
 ## How to use this tool
 - Clone this repository
-- Unzip thee strava zip file into `unzipped` folder
-- run `./run.py`
+- Unzip thee strava zip file into `unzipped` folder, you may see in the folder `.tcx`, `.tcx.gz` and `.gpx.gz` files.
+- Run `./run.py` or eg. `C:\Python37\python run.py` under Windows
+- You should be getting the following progress:
 
+```
+$ ./run.py
+Reading './unzipped/activities.csv'
+Found <number> activities
+Unzipping ...
+Progress:  100%
+Normalizing ...
+./unzipped/activities/650959039.gpx     | Ride         | <activity name>
+./unzipped/activities/674309052.gpx     | Walk         | <activity name>
+...
+...
+./unzipped/activities/675840609.gpx     | Ride         | <activity name>
+./unzipped/activities/688659905.gpx     | Ride         | <activity name>
+./unzipped/activities/689740427.gpx     | Ride         | <activity name>
+Backing up the original activities as './unzipped/activities.csv.original' ...
+Saving new activities ...
+```
+
+## Future development
+- Better error handling
+- Export the activities to XLS(X) files
+- Parametrized execution
+
+## Known issues
+- None :) If you encounter any issue, feel free to report it in the GitHub issues.
  
 
 
