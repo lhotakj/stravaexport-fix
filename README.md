@@ -9,7 +9,7 @@ Simple Python script to unzip any GZ archives and convert `tcx` activities to th
 - *Python 3.4+* (tested on Windows and Linux)
 - Strava archive file containing folder `activites.csv` and folder `activities` with individual files.
 
-## How to get all Strava tracks?
+## How to get all Strava tracks
 - Login to [strava.com](https://www.strava.com/)
 - Go to your profile, click [My Account](https://www.strava.com/account), click [Download or Delete Your Data](https://www.strava.com/athlete/delete_your_account) then `Get Started` button. Don't worry nothing gets deleted.
 - Under point 2 click button `Request Your Archive`.
