@@ -7,7 +7,7 @@ Simple Python script to unzip any GZ archives and convert `tcx` activities to th
   - Ubuntu `sudo apt-get install gpsbabel`
   - Windows: [download](https://www.gpsbabel.org/download.html) and mare sure the script can reach path or copy the `gpsbabel.exe` to the repo root
 - *Python 3.4+* (tested on Windows and Linux)
-- Strava zip files containing folder `activites.csv` and folder `activities` with individual files.
+- Strava archive file containing folder `activites.csv` and folder `activities` with individual files.
 
 ## How to get all Strava tracks?
 - Login to [strava.com](https://www.strava.com/)
