@@ -19,6 +19,18 @@ Simple Python script to unzip any GZ archives and convert `tcx` activities to th
 ## How to use this tool
 - Clone this repository
 - Unzip thee strava zip file into `unzipped` folder, you may see in the folder `.tcx`, `.tcx.gz` and `.gpx.gz` files.
+```
+[jarda@server x]$ cd /home/jarda/WORKING/
+[jarda@server x]$ clone https://github.com/lhotakj/stravaexport-fix.git
+...
+[jarda@server x]$ cd ./stravaexport-fix/unzipped/activities/
+[jarda@server x]$ ll
+-rwxr-xr-x 1 jarda jarda 481539 Jan  2 21:41 1008247839.gpx
+-rwxr-xr-x 1 jarda jarda 742619 Jan  2 21:41 1019050643.gpx
+-rwxr-xr-x 1 jarda jarda   6375 Jan  2 21:46 1022095894.gpx.gz
+-rwxr-xr-x 1 jarda jarda  17565 Jan  2 21:46 1029478699.gpx.gz
+-rwxr-xr-x 1 jarda jarda 121044 Jan  2 21:47 1440081027.tcx.gz
+```
 - Run `./run.py` or eg. `C:\Python37\python run.py` under Windows
 - You should be getting the following progress:
 
