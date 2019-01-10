@@ -15,7 +15,7 @@ Simple Python script to unzip and convert strava `TCX` files to the unified `GPX
 - You should receive within an email within a few hours with a link to your ZIP archive
 - Download the archive 
 
-## How to 
+## How to use this tool
 - Clone this repository
 - Unzip thee strava zip file into `unzipped` folder
 - run `./run.py`
